@@ -15,6 +15,9 @@
 		EE3FDA32286A52D40081B18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3FDA31286A52D40081B18A /* Assets.xcassets */; };
 		EE3FDA35286A52D40081B18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3FDA33286A52D40081B18A /* LaunchScreen.storyboard */; };
 		EE3FDA38286A52D40081B18A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FDA37286A52D40081B18A /* main.m */; };
+		EEEF09EF286B82F600D1904B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09EE286B82F600D1904B /* LoginViewController.m */; };
+		EEEF09F2286B878600D1904B /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09F1286B878600D1904B /* ComposeViewController.m */; };
+		EEEF09F5286B87BC00D1904B /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		EE3FDA34286A52D40081B18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE3FDA36286A52D40081B18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3FDA37286A52D40081B18A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEEF09ED286B82F600D1904B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EEEF09EE286B82F600D1904B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EEEF09F0286B878600D1904B /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		EEEF09F1286B878600D1904B /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		EEEF09F3286B87BC00D1904B /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
+		EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +62,6 @@
 				9905F30D493A3F780ECCE541 /* Pods-Instagram.debug.xcconfig */,
 				38165BE84F086650412A5350 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,8 +99,14 @@
 				EE3FDA28286A52D30081B18A /* SceneDelegate.h */,
 				EE3FDA29286A52D30081B18A /* SceneDelegate.m */,
 				EE3FDA2B286A52D30081B18A /* ViewController.h */,
+				EEEF09ED286B82F600D1904B /* LoginViewController.h */,
+				EEEF09EE286B82F600D1904B /* LoginViewController.m */,
 				EE3FDA2C286A52D30081B18A /* ViewController.m */,
 				EE3FDA2E286A52D30081B18A /* Main.storyboard */,
+				EEEF09F0286B878600D1904B /* ComposeViewController.h */,
+				EEEF09F1286B878600D1904B /* ComposeViewController.m */,
+				EEEF09F3286B87BC00D1904B /* HomeFeedViewController.h */,
+				EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */,
 				EE3FDA31286A52D40081B18A /* Assets.xcassets */,
 				EE3FDA33286A52D40081B18A /* LaunchScreen.storyboard */,
 				EE3FDA36286A52D40081B18A /* Info.plist */,
@@ -217,8 +231,11 @@
 			files = (
 				EE3FDA2D286A52D30081B18A /* ViewController.m in Sources */,
 				EE3FDA27286A52D30081B18A /* AppDelegate.m in Sources */,
+				EEEF09F5286B87BC00D1904B /* HomeFeedViewController.m in Sources */,
 				EE3FDA38286A52D40081B18A /* main.m in Sources */,
+				EEEF09F2286B878600D1904B /* ComposeViewController.m in Sources */,
 				EE3FDA2A286A52D30081B18A /* SceneDelegate.m in Sources */,
+				EEEF09EF286B82F600D1904B /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

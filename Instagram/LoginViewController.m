@@ -7,6 +7,7 @@
 
 #import "LoginViewController.h"
 #import "Parse/Parse.h"
+#import "SceneDelegate.h"
 
 @interface LoginViewController ()
 - (IBAction)signupButton:(id)sender;
@@ -44,9 +45,9 @@
     // add the OK action to the alert controller
     [alert addAction:okAction];
     
-    [self presentViewController:alert animated:YES completion:^{
-        // optional code for what happens after the alert controller has finished presenting
-    }];
+        [self presentViewController:alert animated:YES completion:^{
+            // nothing
+        }];
     }
     else{
             [self loginUser];
@@ -78,9 +79,9 @@
                                                      }];
     // add the OK action to the alert controller
     [alert addAction:okAction];
-    
+        
     [self presentViewController:alert animated:YES completion:^{
-        // optional code for what happens after the alert controller has finished presenting
+        // nothing
     }];
 }
     else{
@@ -110,6 +111,10 @@
             NSLog(@"User registered successfully");
             [self performSegueWithIdentifier:@"FirstSegue" sender:nil];
             // manually segue to logged in view
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UITabBarController *tabBarController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+            SceneDelegate *mySceneDelegate = (SceneDelegate *) UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
+            mySceneDelegate.window.rootViewController = tabBarController;
         }
     }];
 }
@@ -125,6 +130,10 @@
             NSLog(@"User logged in successfully");
             [self performSegueWithIdentifier:@"FirstSegue" sender:nil];
             // display view controller that needs to shown after successful login
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UITabBarController *tabBarController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+            SceneDelegate *mySceneDelegate = (SceneDelegate *) UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
+            mySceneDelegate.window.rootViewController = tabBarController;
         }
     }];
 }

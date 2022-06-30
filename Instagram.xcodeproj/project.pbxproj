@@ -10,7 +10,6 @@
 		A33641CFF688B64E92147634 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0981F7D6BC0AA4DA0F17F /* Pods_Instagram.framework */; };
 		EE3FDA27286A52D30081B18A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FDA26286A52D30081B18A /* AppDelegate.m */; };
 		EE3FDA2A286A52D30081B18A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FDA29286A52D30081B18A /* SceneDelegate.m */; };
-		EE3FDA2D286A52D30081B18A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FDA2C286A52D30081B18A /* ViewController.m */; };
 		EE3FDA30286A52D30081B18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3FDA2E286A52D30081B18A /* Main.storyboard */; };
 		EE3FDA32286A52D40081B18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3FDA31286A52D40081B18A /* Assets.xcassets */; };
 		EE3FDA35286A52D40081B18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3FDA33286A52D40081B18A /* LaunchScreen.storyboard */; };
@@ -18,6 +17,11 @@
 		EEEF09EF286B82F600D1904B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09EE286B82F600D1904B /* LoginViewController.m */; };
 		EEEF09F2286B878600D1904B /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09F1286B878600D1904B /* ComposeViewController.m */; };
 		EEEF09F5286B87BC00D1904B /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */; };
+		EEEF09F8286CEB8A00D1904B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09F7286CEB8A00D1904B /* ProfileViewController.m */; };
+		EEEF09FA286CFE0800D1904B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEEF09F9286CFE0800D1904B /* Keys.plist */; };
+		EEEF09FD286D00DE00D1904B /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09FC286D00DE00D1904B /* PhotoViewController.m */; };
+		EEEF0A00286D15E300D1904B /* GramCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF09FF286D15E300D1904B /* GramCell.m */; };
+		EEEF0A03286D17AC00D1904B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF0A02286D17AC00D1904B /* Post.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +33,6 @@
 		EE3FDA26286A52D30081B18A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EE3FDA28286A52D30081B18A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EE3FDA29286A52D30081B18A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EE3FDA2B286A52D30081B18A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE3FDA2C286A52D30081B18A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE3FDA2F286A52D30081B18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE3FDA31286A52D40081B18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE3FDA34286A52D40081B18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 		EEEF09F1286B878600D1904B /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		EEEF09F3286B87BC00D1904B /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
 		EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
+		EEEF09F6286CEB8A00D1904B /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		EEEF09F7286CEB8A00D1904B /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		EEEF09F9286CFE0800D1904B /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		EEEF09FB286D00DE00D1904B /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		EEEF09FC286D00DE00D1904B /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		EEEF09FE286D15E300D1904B /* GramCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GramCell.h; sourceTree = "<group>"; };
+		EEEF09FF286D15E300D1904B /* GramCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GramCell.m; sourceTree = "<group>"; };
+		EEEF0A01286D17AC00D1904B /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		EEEF0A02286D17AC00D1904B /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,18 +109,25 @@
 				EE3FDA26286A52D30081B18A /* AppDelegate.m */,
 				EE3FDA28286A52D30081B18A /* SceneDelegate.h */,
 				EE3FDA29286A52D30081B18A /* SceneDelegate.m */,
-				EE3FDA2B286A52D30081B18A /* ViewController.h */,
 				EEEF09ED286B82F600D1904B /* LoginViewController.h */,
 				EEEF09EE286B82F600D1904B /* LoginViewController.m */,
-				EE3FDA2C286A52D30081B18A /* ViewController.m */,
 				EE3FDA2E286A52D30081B18A /* Main.storyboard */,
+				EEEF09F6286CEB8A00D1904B /* ProfileViewController.h */,
+				EEEF09F7286CEB8A00D1904B /* ProfileViewController.m */,
+				EEEF09FB286D00DE00D1904B /* PhotoViewController.h */,
+				EEEF09FC286D00DE00D1904B /* PhotoViewController.m */,
 				EEEF09F0286B878600D1904B /* ComposeViewController.h */,
 				EEEF09F1286B878600D1904B /* ComposeViewController.m */,
 				EEEF09F3286B87BC00D1904B /* HomeFeedViewController.h */,
 				EEEF09F4286B87BC00D1904B /* HomeFeedViewController.m */,
+				EEEF0A01286D17AC00D1904B /* Post.h */,
+				EEEF0A02286D17AC00D1904B /* Post.m */,
+				EEEF09FE286D15E300D1904B /* GramCell.h */,
+				EEEF09FF286D15E300D1904B /* GramCell.m */,
 				EE3FDA31286A52D40081B18A /* Assets.xcassets */,
 				EE3FDA33286A52D40081B18A /* LaunchScreen.storyboard */,
 				EE3FDA36286A52D40081B18A /* Info.plist */,
+				EEEF09F9286CFE0800D1904B /* Keys.plist */,
 				EE3FDA37286A52D40081B18A /* main.m */,
 			);
 			path = Instagram;
@@ -174,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEF09FA286CFE0800D1904B /* Keys.plist in Resources */,
 				EE3FDA35286A52D40081B18A /* LaunchScreen.storyboard in Resources */,
 				EE3FDA32286A52D40081B18A /* Assets.xcassets in Resources */,
 				EE3FDA30286A52D30081B18A /* Main.storyboard in Resources */,
@@ -229,10 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3FDA2D286A52D30081B18A /* ViewController.m in Sources */,
 				EE3FDA27286A52D30081B18A /* AppDelegate.m in Sources */,
+				EEEF09FD286D00DE00D1904B /* PhotoViewController.m in Sources */,
+				EEEF09F8286CEB8A00D1904B /* ProfileViewController.m in Sources */,
 				EEEF09F5286B87BC00D1904B /* HomeFeedViewController.m in Sources */,
 				EE3FDA38286A52D40081B18A /* main.m in Sources */,
+				EEEF0A03286D17AC00D1904B /* Post.m in Sources */,
+				EEEF0A00286D15E300D1904B /* GramCell.m in Sources */,
 				EEEF09F2286B878600D1904B /* ComposeViewController.m in Sources */,
 				EE3FDA2A286A52D30081B18A /* SceneDelegate.m in Sources */,
 				EEEF09EF286B82F600D1904B /* LoginViewController.m in Sources */,

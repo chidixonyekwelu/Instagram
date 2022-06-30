@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Keys.plist
-   Instagram
-
-   Created by Chidi Onyekwelu on 6/29/22.
-   Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>APP_ID</key>
+	<string>4WQcpoEIMisKNk0ajZoqxHJnwxgJAociu0l9OX14
+4WQcpoEIMisKNk0ajZoqxHJnwxgJAociu0l9OX14
+4WQcpoEIMisKNk0ajZoqxHJnwxgJAociu0l9OX14
+</string>
+	<key>Client_Key</key>
+	<string>zjh6C7KLVRPhUDC8TFzSDhQh4bqsLr1mUvbtLqHO</string>
+</dict>
 </plist>

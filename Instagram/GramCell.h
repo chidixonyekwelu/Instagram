@@ -12,6 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GramCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *captionHomeView;
 @property (strong, nonatomic) Post *thisPost;
 @property (weak, nonatomic) IBOutlet PFImageView *postImages;
 

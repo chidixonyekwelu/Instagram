@@ -11,8 +11,11 @@
 #import "SceneDelegate.h"
 #import "GramCell.h"
 #import "Post.h"
+#import "PostDetailsViewController.h"
+#import "ComposeViewController.h"
+#import "DateTools.h"
 
-@interface HomeFeedViewController () <UITableViewDataSource>
+@interface HomeFeedViewController () <ComposeViewControllerDelegate ,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *arrayOfposts;
 @property(strong, nonatomic) UIRefreshControl *refreshcontrol;
@@ -39,7 +42,9 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self fetchData];
-    UIRefreshControl *refreshcontrol = [[UIRefreshControl alloc] init];
+    self.refreshcontrol = [[UIRefreshControl alloc] init];
+    [self.refreshcontrol addTarget:self action:@selector(fetchData) forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshcontrol atIndex:0];
  
     // Do any additional setup after loading the view.
 }
@@ -55,16 +60,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     GramCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GramCell"];
     Post *thisPost = self.arrayOfposts[indexPath.row];
-//    cell.thisPost = thisPost;
+    cell.thisPost = thisPost;
         cell.postImages.file = thisPost[@"image"];
         [cell.postImages loadInBackground];
-    
+    cell.captionHomeView.text = thisPost[@"caption"];
+    cell.timeLabel.text = [thisPost.createdAt shortTimeAgoSinceNow];
     return cell;
 }
 
 - (void)fetchData
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query orderByDescending:@"createdAt"];
     query.limit = 20;
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
@@ -72,20 +79,36 @@
             // do something with the array of object returned by the call
             self.arrayOfposts = (NSMutableArray*) posts;
             [self.tableView reloadData];
+            [self.refreshcontrol endRefreshing];
         } else {
             NSLog(@"%@", error.localizedDescription);
         }
     }];
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"PostDetailsSegue"]) {
+        Post * post = self.arrayOfposts[[self.tableView indexPathForCell:sender].row
+        ];
+        PostDetailsViewController *detailsviewcontroller = [segue destinationViewController];
+        detailsviewcontroller.post = post;
+            
+    //     Get the new view controller using [segue destinationViewController].
+    }
+    else {
+        UINavigationController *navigationcontroller = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationcontroller.topViewController;
+        composeController.delegate = self;
+        
+    }
 }
-*/
 
+- (void)didPost:(Post *)post {
+    [self.arrayOfposts insertObject:post atIndex:0];
+    [self.tableView reloadData];
+}
 
 @end

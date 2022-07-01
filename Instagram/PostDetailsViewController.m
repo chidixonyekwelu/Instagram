@@ -6,8 +6,14 @@
 //
 
 #import "PostDetailsViewController.h"
+#import "GramCell.h"
+#import "Parse/Parse.h"
+#import "Post.h"
+#import "HomeFeedViewController.h"
 
 @interface PostDetailsViewController ()
+@property (weak, nonatomic) IBOutlet PFImageView *postDetailImage;
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 
 @end
 
@@ -15,6 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.postDetailImage.file = self.post.image;
+    [self.postDetailImage loadInBackground];
+    
+    self.captionLabel.text = self.post.caption;
+    
     // Do any additional setup after loading the view.
 }
 
